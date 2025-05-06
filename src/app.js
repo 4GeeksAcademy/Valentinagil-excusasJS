@@ -1,9 +1,8 @@
 import "bootstrap";
 import "./style.css";
-
-
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+
 
 window.onload = function () {
   function generateExcuse() {
@@ -17,14 +16,10 @@ window.onload = function () {
     let randomWhat = what[Math.floor(Math.random() * what.length)];
     let randomWhen = when[Math.floor(Math.random() * when.length)];
 
-    const excuse= `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`
-    return  excuse
-
+    const excuse = `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`;
+    return  excuse;
   }
-  console.log(generateExcuse())
-  document.getElementById("excuse").innerHTML=generateExcuse();
 
+  // console.log(generateExcuse());
+  document.getElementById("excuse").innerHTML = generateExcuse();
 };
-
-
-
